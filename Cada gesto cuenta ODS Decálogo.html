@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decálogo: Cada Gesto Importa (ODS) - 4º Primaria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Comic Neue', 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+        }
+
+        body {
+            background-color: #E8F5E9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .contenedor-app {
+            background-color: #FFFFFF;
+            border: 4px solid #2E7D32;
+            border-radius: 20px;
+            box-shadow: 8px 8px 0px #2E7D32;
+            width: 100%;
+            max-width: 900px;
+            padding: 40px 25px 25px 25px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .etiqueta-izquierda {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: #2E7D32;
+            color: white;
+            border: 3px solid #000000;
+            padding: 6px 12px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            border-radius: 8px;
+            transform: rotate(-5deg);
+            box-shadow: 2px 2px 0px #000000;
+            z-index: 10;
+        }
+
+        .etiqueta-derecha {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #66BB6A;
+            color: white;
+            border: 3px solid #000000;
+            padding: 6px 12px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            border-radius: 8px;
+            transform: rotate(5deg);
+            box-shadow: 2px 2px 0px #000000;
+            z-index: 10;
+        }
+
+        .creditos {
+            margin-top: 25px;
+            font-size: 0.95rem;
+            color: #555555;
+            font-weight: bold;
+            font-style: italic;
+            border-top: 2px dashed #2E7D32;
+            padding-top: 15px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #2E7D32;
+            text-shadow: 2px 2px 0px #C8E6C9;
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+            color: #2E7D32;
+            margin-bottom: 10px;
+        }
+
+        .icono-grande {
+            font-size: 4rem;
+            margin: 10px 0;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        .fila-navegacion {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .num-pantalla {
+            background-color: #2E7D32;
+            color: white;
+            border: 4px solid #000000;
+            padding: 5px 15px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .btn-audio {
+            background-color: #66BB6A;
+            border: 3px solid #000000;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            font-size: 1.4rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 3px 3px 0px #000000;
+            transition: all 0.1s;
+            outline: none;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .btn-audio:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: 4px 4px 0px #000000;
+            background-color: #A5D6A7;
+            color: black;
+        }
+
+        .btn-audio:active {
+            transform: translate(3px, 3px);
+            box-shadow: 0px 0px 0px #000000;
+        }
+
+        .btn-casa {
+            background-color: #FFFFFF;
+            border: 3px solid #2E7D32;
+            border-radius: 10px;
+            height: 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 3px 3px 0px #2E7D32;
+            transition: all 0.1s;
+            padding: 0 12px;
+            color: #2E7D32;
+        }
+
+        .btn-casa:hover {
+            background-color: #E8F5E9;
+            transform: translate(-1px, -1px);
+            box-shadow: 4px 4px 0px #2E7D32;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: 4px solid #000000;
+            border-radius: 15px;
+            padding: 10px 24px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 4px 4px 0px #000000;
+            transition: all 0.2s;
+            outline: none;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px #000000;
+            background-color: #81C784;
+            color: black;
+        }
+
+        .btn:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px #000000;
+        }
+
+        .caja-consejo, .caja-ejemplo {
+            margin: 15px 0;
+            min-height: 160px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cabecera-consejo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 12px;
+            width: 100%;
+        }
+
+        .titulo-consejo {
+            font-size: 1.5rem;
+            color: #2E7D32;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+        }
+
+        .detalle-consejo, .texto-ejemplo-cuerpo {
+            font-size: 1.15rem;
+            color: #333333;
+            line-height: 1.5;
+            background-color: #E8F5E9;
+            border: 3px dashed #66BB6A;
+            padding: 16px;
+            border-radius: 12px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .contenedor-presentaciones {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        .opcion-presentacion {
+            background-color: #E8F5E9;
+            border: 3px solid #2E7D32;
+            border-radius: 12px;
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            box-shadow: 3px 3px 0px #2E7D32;
+        }
+
+        .texto-presentacion {
+            font-size: 1.05rem;
+            color: #333333;
+            font-weight: bold;
+            margin: 0;
+            line-height: 1.3;
+        }
+
+        .resaltado-inicio {
+            background-color: #FFF9C4;
+            border-bottom: 3px solid #FBC02D;
+            padding: 2px 4px;
+            font-weight: bold;
+        }
+
+        .resaltado-nudo {
+            background-color: #C8E6C9;
+            border-bottom: 3px solid #388E3C;
+            padding: 2px 4px;
+            font-weight: bold;
+        }
+
+        .resaltado-desenlace {
+            background-color: #BBDEFB;
+            border-bottom: 3px solid #1E88E5;
+            padding: 2px 4px;
+            font-weight: bold;
+        }
+
+        .leyenda-ejemplos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+
+        .leyenda-item {
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .lista-adjetivos {
+            background-color: #FFFFFF;
+            border: 2px solid #2E7D32;
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #1B5E20;
+        }
+
+        /* Estilos de Practicamos */
+        .bloque-pregunta {
+            background-color: #E8F5E9;
+            border: 3px solid #2E7D32;
+            border-radius: 12px;
+            padding: 10px 14px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .titulo-pregunta {
+            font-weight: bold;
+            color: #2E7D32;
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
+
+        .opciones-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .btn-opcion {
+            background-color: #FFFFFF;
+            border: 2px solid #2E7D32;
+            border-radius: 8px;
+            padding: 8px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            color: #333;
+            transition: all 0.1s;
+        }
+
+        .btn-opcion:hover {
+            background-color: #C8E6C9;
+        }
+
+        .btn-opcion.seleccionada {
+            background-color: #2E7D32;
+            color: white;
+        }
+
+        /* Layout Escribimos (Columna Izq scrollable / Columna Der fija) */
+        .grid-escribimos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-escribimos {
+                grid-template-columns: 1fr;
+            }
+            .opciones-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contenedor-inputs-decalogo {
+            max-height: 480px;
+            overflow-y: auto;
+            padding-right: 8px;
+        }
+
+        .campo-formulario {
+            margin-bottom: 8px;
+        }
+
+        .campo-formulario label {
+            display: block;
+            font-weight: bold;
+            color: #2E7D32;
+            font-size: 0.9rem;
+            margin-bottom: 2px;
+        }
+
+        .campo-formulario input {
+            width: 100%;
+            border: 2px solid #2E7D32;
+            border-radius: 6px;
+            padding: 6px 8px;
+            font-size: 0.95rem;
+            background-color: #FAFAFA;
+        }
+
+        .nota-papel {
+            background-color: #F1F8E9;
+            border: 3px dashed #7CB342;
+            border-radius: 12px;
+            padding: 14px;
+            box-shadow: 4px 4px 0px #558B2F;
+            min-height: 250px;
+            position: relative;
+        }
+
+        .lista-preview-decalogo {
+            margin: 8px 0;
+            padding-left: 20px;
+            font-size: 0.92rem;
+            line-height: 1.4;
+            color: #333;
+            max-height: 260px;
+            overflow-y: auto;
+        }
+
+        .lista-preview-decalogo li {
+            margin-bottom: 4px;
+        }
+
+        .caja-checklist {
+            background-color: #E8F5E9;
+            border: 2px solid #2E7D32;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .item-check {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+            font-weight: bold;
+            color: #2E7D32;
+        }
+
+        .pantalla {
+            display: none;
+        }
+
+        .pantalla.activa {
+            display: block;
+        }
+
+        .diploma {
+            border: 8px dashed #4CAF50;
+            padding: 25px;
+            background-color: #E8F5E9;
+            border-radius: 15px;
+            margin-top: 10px;
+        }
+
+        .diploma h2 {
+            font-size: 1.9rem;
+            color: #2E7D32;
+            margin: 0;
+        }
+
+        .confeti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f00;
+            border-radius: 50%;
+            animation: caer 3s linear infinite;
+            top: -10px;
+        }
+
+        @keyframes caer {
+            0% { top: -10px; transform: translateX(0) rotate(0deg); }
+            100% { top: 100%; transform: translateX(100px) rotate(360deg); }
+        }
+
+        /* Estilo para impresión PDF limpia */
+        @media print {
+            body {
+                background-color: #FFFFFF;
+                padding: 0;
+            }
+            .contenedor-app {
+                border: none;
+                box-shadow: none;
+                max-width: 100%;
+                padding: 0;
+            }
+            .etiqueta-izquierda, .etiqueta-derecha, .btn, .btn-audio, .btn-casa, .fila-navegacion, .grid-escribimos > div:first-child, .caja-checklist, .creditos {
+                display: none !important;
+            }
+            .grid-escribimos {
+                grid-template-columns: 1fr;
+            }
+            .nota-papel {
+                border: 2px solid #000;
+                box-shadow: none;
+                font-size: 1.2rem;
+                padding: 30px;
+            }
+            .lista-preview-decalogo {
+                max-height: none;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-app">
+        
+        <div class="etiqueta-izquierda">4º PRIMARIA</div>
+        <div class="etiqueta-derecha">CADA GESTO IMPORTA (ODS)</div>
+        
+        <!-- PANTALLA INICIAL -->
+        <div id="pantalla-inicio" class="pantalla activa">
+            <h1>¡Escribo un Decálogo ODS!</h1>
+            <div class="icono-grande">🌍🌱💧</div>
+            <p style="font-size: 1.25rem; font-weight: bold; color: #333;">¿Quieres aprender a escribir un decálogo con 10 normas para cuidar el planeta? ¡Aprende paso a paso de forma divertida!</p>
+            <br>
+            <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+                <button class="btn" onclick="irAPantalla('pantalla-que-es', hablarQueEs)">💡 ¿Qué es?</button>
+                <button class="btn" style="background-color: #1B5E20; color: white;" onclick="irAPantalla('pantalla-estructura', hablarEstructuraIntro)">🧩 Estructura</button>
+            </div>
+            
+            <div class="creditos">
+                Elaborado por el maestro Carlos Garrido - Objetivos de Desarrollo Sostenible (ODS)
+            </div>
+        </div>
+
+        <!-- PANTALLA 1: ¿QUÉ ES? -->
+        <div id="pantalla-que-es" class="pantalla">
+            <div class="fila-navegacion">
+                <div class="num-pantalla" style="background-color: #1B5E20; color: white;">1. ¿Qué es un Decálogo ODS?</div>
+                <button class="btn-casa" onclick="irInicio()" title="Inicio">🏠</button>
+            </div>
+            <div class="icono-grande">💡🌍</div>
+            <div class="caja-consejo">
+                <div class="cabecera-consejo">
+                    <div class="titulo-consejo">Cada Gesto Importa</div>
+                    <button class="btn-audio" onclick="hablarQueEs()">🔊</button>
+                </div>
+                <div class="detalle-consejo" style="text-align: center; font-size: 1.2rem;">
+                    Un <strong>decálogo</strong> es un texto que reúne <strong>10 normas o compromisos fundamentales</strong>. El decálogo <em>Cada Gesto Importa</em> contiene 10 acciones diarias inspiradas en los Objetivos de Desarrollo Sostenible (ODS) para cuidar el agua, ahorrar energía y proteger la naturaleza desde la escuela y casa.
+                </div>
+            </div>
+            <br>
+            <button class="btn" onclick="irAPantalla('pantalla-estructura', hablarEstructuraIntro)">Siguiente: Ver la Estructura ➡️</button>
+        </div>
+
+        <!-- PANTALLA 2: ESTRUCTURA -->
+        <div id="pantalla-estructura" class="pantalla">
+            <div class="fila-navegacion">
+                <div class="num-pantalla" style="background-color: #C8E6C9; color: black;">2. Las 4 Partes del Decálogo</div>
+                <button class="btn-casa" onclick="irInicio()" title="Inicio">🏠</button>
+                <button class="btn" style="padding: 6px 15px; font-size: 1rem;" onclick="irAPantalla('pantalla-ejemplos', mostrarEjemplo)">Ejemplos 📚</button>
+            </div>
+            <h2>Partes que no pueden faltar</h2>
+            <p style="font-size: 1.05rem; color:#444; margin:0;">Toca los altavoces para escuchar cada parte:</p>
+            
+            <div class="contenedor-presentaciones">
+                <div class="opcion-presentacion">
+                    <p class="texto-presentacion">📌 <strong>1. Título Llamativo:</strong> Nombre claro con el lema (Ej: "Decálogo: Cada Gesto Importa por el Planeta").</p>
+                    <button class="btn-audio" onclick="hablarEstructura(1)">🔊</button>
+                </div>
+                <div class="opcion-presentacion">
+                    <p class="texto-presentacion">🎯 <strong>2. Meta u ODS Trabajado:</strong> Mención explícita del objetivo (Ej: ODS 6 Agua limpia, ODS 12 Reciclaje).</p>
+                    <button class="btn-audio" onclick="hablarEstructura(2)">🔊</button>
+                </div>
+                <div class="opcion-presentacion">
+                    <p class="texto-presentacion">🔢 <strong>3. Las 10 Normas Numeradas:</strong> Frases del 1 al 10 iniciadas con verbos de acción (Ej: "1. Cierra el grifo...", "2. Apaga la luz...").</p>
+                    <button class="btn-audio" onclick="hablarEstructura(3)">🔊</button>
+                </div>
+                <div class="opcion-presentacion">
+                    <p class="texto-presentacion">✍️ <strong>4. Firma de Compromiso:</strong> Tu nombre o equipo (Ej: "Eco-Guardia de 4º Primaria").</p>
+                    <button class="btn-audio" onclick="hablarEstructura(4)">🔊</button>
+                </div>
+            </div>
+            
+            <button class="btn" onclick="irAPantalla('pantalla-ejemplos', mostrarEjemplo)">¡Ver Ejemplos Reales! ➡️</button>
+        </div>
+
+        <!-- PANTALLA 3: EJEMPLOS -->
+        <div id="pantalla-ejemplos" class="pantalla">
+            <div class="fila-navegacion">
+                <div id="indicador-ejemplos" class="num-pantalla">Ejemplo 1 de 3</div>
+                <button class="btn-casa" onclick="irInicio()" title="Inicio">🏠</button>
+            </div>
+            
+            <div class="leyenda-ejemplos">
+                <span class="leyenda-item" style="background-color: #FFF9C4; border: 1px solid #FBC02D;">🟡 Título y ODS</span>
+                <span class="leyenda-item" style="background-color: #C8E6C9; border: 1px solid #388E3C;">🟢 10 Normas</span>
+                <span class="leyenda-item" style="background-color: #BBDEFB; border: 1px solid #1E88E5;">🔵 Firma</span>
+            </div>
+
+            <div id="icono-ejemplo" class="icono-grande">📖</div>
+            
+            <div class="caja-ejemplo">
+                <div class="cabecera-consejo">
+                    <div id="titulo-ejemplo" class="titulo-consejo">Título Ejemplo</div>
+                    <button class="btn-audio" onclick="repetirEjemploActual()">🔊</button>
+                </div>
+                <div id="cuerpo-ejemplo" class="texto-ejemplo-cuerpo">Texto del ejemplo...</div>
+            </div>
+            
+            <button id="btn-siguiente-ejemplo" class="btn" onclick="siguienteEjemplo()">Siguiente Ejemplo ➡️</button>
+        </div>
+
+        <!-- PANTALLA 4: 10 CONSEJOS (Numerados del 1 al 10) -->
+        <div id="pantalla-consejos" class="pantalla">
+            <div class="fila-navegacion">
+                <div id="indicador-pantalla" class="num-pantalla">Consejo 1 de 10</div>
+                <button class="btn-casa" onclick="irInicio()" title="Inicio">🏠</button>
+            </div>
+            
+            <div id="icono-consejo" class="icono-grande">🚀</div>
+            
+            <div class="caja-consejo">
+                <div class="cabecera-consejo">
+                    <div id="titulo-consejo" class="titulo-consejo">Título del consejo</div>
+                    <button class="btn-audio" onclick="repetirAudioConsejo()">🔊</button>
+                </div>
+                <div id="detalle-consejo" class="detalle-consejo">Detalle del consejo...</div>
+            </div>
+            
+            <button id="btn-siguiente-consejo" class="btn" onclick="siguienteConsejo()">Siguiente Consejo ➡️</button>
+        </div>
+
+        <!-- PANTALLA 5: PRACTICAMOS -->
+        <div id="pantalla-practicamos" class="pantalla">
+            <div class="fila-navegacion">
+                <div class="num-pantalla" style="background-color: #F57C00; color: white;">🎯 Practicamos: Lee y Analiza</div>
+                <button class="btn-casa" onclick="irInicio()" title="Inicio">🏠</button>
+            </div>
+
+            <div class="nota-papel" style="margin-bottom: 12px; padding: 10px 15px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <strong style="color: #2E7D32; font-size: 1.1rem;">Decálogo ODS: La Eco-Escuela</strong>
+                    <button class="btn-audio" style="width: 36px; height: 36px; font-size: 1rem;" onclick="hablarDecalogoPractica()">🔊</button>
+                </div>
+                <ol style="margin: 5px 0; padding-left: 20px; font-size: 0.95rem; text-align: left; color: #333;">
+                    <li>Cierra el grifo mientras te lavas las manos.</li>
+                    <li>Apaga la luz al salir de clase.</li>
+                    <li>Separa los residuos en sus contenedores.</li>
+                    <li>Usa la papelera de reciclaje de papel.</li>
+                    <li>Utiliza el termo de agua reutilizable.</li>
+                    <li>Aprovecha la luz natural abriendo persianas.</li>
+                    <li>Cuida las plantas del huerto escolar.</li>
+                    <li>Trae el almuerzo en fiambrera.</li>
+                    <li>Ven al colegio andando o en bici.</li>
+                    <li>Respeta a todos los compañeros y compañeras.</li>
+                </ol>
+                <div style="text-align: right; font-weight: bold; font-size: 0.95rem; color: #2E7D32;"><u>Eco-Patrulla de 4º A</u></div>
+            </div>
+
+            <div class="bloque-pregunta">
+                <div class="titulo-pregunta">1. ¿Cuántas normas componen un decálogo?</div>
+                <div class="opciones-grid">
+                    <button class="btn-opcion" onclick="seleccionarOpcion(this, 'p1')">Exactamente 10 normas</button>
+                    <button class="btn-opcion" onclick="seleccionarOpcion(this, 'p1')">Solo 3 normas</button>
+                </div>
+            </div>
+
+            <div class="bloque-pregunta">
+                <div class="titulo-pregunta">2. ¿Con qué palabras se inician las normas del decálogo?</div>
+                <div class="opciones-grid">
+                    <button class="btn-opcion" onclick="seleccionarOpcion(this, 'p2')">Verbos de acción (Cierra, Apaga, Usa...)</button>
+                    <button class="btn-opcion" onclick="seleccionarOpcion(this, 'p2')">Nombres de personas</button>
+                </div>
+            </div>
+
+            <div class="bloque-pregunta">
+                <div class="titulo-pregunta">3. ¿Qué ODS trabaja la norma "Cierra el grifo"?</div>
+                <div class="opciones-grid">
+                    <button class="btn-opcion" onclick="seleccionarOpcion(this, 'p3')">ODS 6: Agua limpia y saneamiento</button>
+                    <button class="btn-opcion" onclick="seleccionarOpcion(this, 'p3')">ODS 14: Vida submarina</button>
+                </div>
+            </div>
+
+            <div class="bloque-pregunta">
+                <div class="titulo-pregunta">4. ¿Quién asume el compromiso al final?</div>
+                <div class="opciones-grid">
+                    <button class="btn-opcion" onclick="seleccionarOpcion(this, 'p4')">La Eco-Patrulla de 4º A</button>
+                    <button class="btn-opcion" onclick="seleccionarOpcion(this, 'p4')">El director del colegio</button>
+                </div>
+            </div>
+
+            <button class="btn" style="background-color: #2E7D32;" onclick="irAPantalla('pantalla-escribimos', inicializarEscribimos)">¡Ir al Taller "Escribimos"! ✍️</button>
+        </div>
+
+        <!-- PANTALLA 6: ESCRIBIMOS (Taller interactivo con 10 normas del 1 al 10) -->
+        <div id="pantalla-escribimos" class="pantalla">
+            <div class="fila-navegacion">
+                <div class="num-pantalla" style="background-color: #2E7D32; color: white;">✍️ Taller: Crea tu Decálogo (1 al 10)</div>
+                <button class="btn-casa" onclick="irInicio()" title="Inicio">🏠</button>
+            </div>
+
+            <div class="grid-escribimos">
+                <!-- Columna Izquierda: Entradas de datos del decálogo (Scroll) -->
+                <div>
+                    <h3 style="color: #2E7D32; margin-top: 0; font-size: 1.1rem;">Completa los campos de tu Decálogo ODS:</h3>
+                    
+                    <div class="contenedor-inputs-decalogo">
+                        <div class="campo-formulario">
+                            <label>📌 Título del Decálogo:</label>
+                            <input type="text" id="input-titulo" placeholder="Ej: Decálogo: Cada Gesto Importa en 4º" oninput="actualizarDecalogo()">
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label>🎯 ODS / Meta Principal:</label>
+                            <input type="text" id="input-ods" placeholder="Ej: ODS 12: Consumo y Producción Responsables" oninput="actualizarDecalogo()">
+                        </div>
+
+                        <h4 style="color:#2E7D32; margin: 8px 0 4px 0; font-size: 0.95rem;">Las 10 Normas del Decálogo:</h4>
+
+                        <div class="campo-formulario">
+                            <label>1. Norma 1:</label>
+                            <input type="text" id="n1" placeholder="Ej: Cierra el grifo mientras te lavas los dientes." oninput="actualizarDecalogo()">
+                        </div>
+                        <div class="campo-formulario">
+                            <label>2. Norma 2:</label>
+                            <input type="text" id="n2" placeholder="Ej: Apaga las luces al salir de la habitación." oninput="actualizarDecalogo()">
+                        </div>
+                        <div class="campo-formulario">
+                            <label>3. Norma 3:</label>
+                            <input type="text" id="n3" placeholder="Ej: Recicla el plástico en el contenedor amarillo." oninput="actualizarDecalogo()">
+                        </div>
+                        <div class="campo-formulario">
+                            <label>4. Norma 4:</label>
+                            <input type="text" id="n4" placeholder="Ej: Usa ambas caras de las hojas de papel." oninput="actualizarDecalogo()">
+                        </div>
+                        <div class="campo-formulario">
+                            <label>5. Norma 5:</label>
+                            <input type="text" id="n5" placeholder="Ej: Trae la merienda en fiambrera o portasándwich." oninput="actualizarDecalogo()">
+                        </div>
+                        <div class="campo-formulario">
+                            <label>6. Norma 6:</label>
+                            <input type="text" id="n6" placeholder="Ej: Camina o usa la bici para trayectos cortos." oninput="actualizarDecalogo()">
+                        </div>
+                        <div class="campo-formulario">
+                            <label>7. Norma 7:</label>
+                            <input type="text" id="n7" placeholder="Ej: Cuida y respeta las plantas y animales del patio." oninput="actualizarDecalogo()">
+                        </div>
+                        <div class="campo-formulario">
+                            <label>8. Norma 8:</label>
+                            <input type="text" id="n8" placeholder="Ej: No tires envoltorios al suelo jamas." oninput="actualizarDecalogo()">
+                        </div>
+                        <div class="campo-formulario">
+                            <label>9. Norma 9:</label>
+                            <input type="text" id="n9" placeholder="Ej: Comparte tus juguetes y libros para reutilizar." oninput="actualizarDecalogo()">
+                        </div>
+                        <div class="campo-formulario">
+                            <label>10. Norma 10:</label>
+                            <input type="text" id="n10" placeholder="Ej: Difunde estos gestos a tus amigos y familia." oninput="actualizarDecalogo()">
+                        </div>
+
+                        <div class="campo-formulario" style="margin-top: 10px;">
+                            <label>✍️ Firma / Eco-Brigada:</label>
+                            <input type="text" id="input-firma" placeholder="Ej: Tu nombre o Patrulla Verde 4º" oninput="actualizarDecalogo()">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Vista Previa, Checklist, Imprimir -->
+                <div>
+                    <h3 style="color: #2E7D32; margin-top: 0; font-size: 1.1rem;">Vista previa de tu Decálogo:</h3>
+                    
+                    <div class="nota-papel" id="zona-nota-imprimir">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: bold; color: #2E7D32; font-size: 1.05rem;" id="prev-titulo">Título: _______</span>
+                            <button class="btn-audio" style="width: 36px; height: 36px; font-size: 1rem;" onclick="leerNotaRedactada()">🔊</button>
+                        </div>
+                        <p style="font-size: 0.9rem; color: #1B5E20; font-weight: bold; margin: 4px 0;" id="prev-ods">Meta: _______</p>
+                        
+                        <ol class="lista-preview-decalogo" id="prev-lista">
+                            <!-- Las 10 normas se cargan dinámicamente -->
+                        </ol>
+
+                        <div style="text-align: right; font-weight: bold; font-size: 1rem; color: #2E7D32;" id="prev-firma">
+                            Firma: _______
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 8px; margin-top: 10px;">
+                        <button class="btn" style="flex: 1; font-size: 1rem; padding: 8px; background-color: #388E3C;" onclick="imprimirNotaPDF()">🖨️ Descargar en PDF</button>
+                    </div>
+
+                    <div class="caja-checklist">
+                        <div style="font-weight: bold; color: #2E7D32; margin-bottom: 4px;">📋 Lista de Chequeo (Comprueba tu Decálogo):</div>
+                        <div class="item-check"><input type="checkbox"> El título incluye el lema "Cada Gesto Importa".</div>
+                        <div class="item-check"><input type="checkbox"> He identificado el ODS o meta ecológica.</div>
+                        <div class="item-check"><input type="checkbox"> He completado las 10 normas del 1 al 10.</div>
+                        <div class="item-check"><input type="checkbox"> Las normas empiezan por verbos de acción.</div>
+                        <div class="item-check"><input type="checkbox"> Puse mi firma de compromiso al final.</div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <button class="btn" style="background-color: #2E7D32; margin-top: 10px;" onclick="irAlDiploma()">¡Terminar y ver mi Diploma! 🏆</button>
+        </div>
+
+        <!-- PANTALLA FINAL: DIPLOMA -->
+        <div id="pantalla-final" class="pantalla">
+            <div class="diploma">
+                <div class="icono-grande">🏆🌍🌱</div>
+                <h2>¡DIPLOMA DE GUARDIÁN DEL PLANETA Y LOS ODS!</h2>
+                <p style="font-size: 1.3rem; font-weight: bold; color: #2E7D32; margin: 15px 0;">
+                    Otorgado al alumno/a de 4º de Primaria por escribir sus 10 compromisos en el Decálogo "Cada Gesto Importa" y demostrar que los pequeños cambios salvan el planeta.
+                </p>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                    <p style="font-size: 1.2rem; color: #1B5E20; font-weight: bold; margin: 0;">
+                        ¡Cuelga tus 10 normas en clase o en casa y cúplelas cada día!
+                    </p>
+                    <button class="btn-audio" onclick="repetirAudioFinal()">🔊</button>
+                </div>
+            </div>
+            <br>
+            <button class="btn" onclick="irInicio()">Volver a Empezar 🔄</button>
+        </div>
+
+    </div>
+
+    <div id="zona-confeti" style="position: absolute; top:0; left:0; width:100%; height:100%; pointer-events: none; overflow:hidden;"></div>
+
+    <script>
+        // DATOS DE EJEMPLOS Y CONSEJOS SOBRE DECALOGO Y ODS
+        const ejemplos = [
+            {
+                titulo: "1. Ahorro de Agua (ODS 6)",
+                icono: "💧",
+                textShow: "<span class='resaltado-inicio'>🏷️ Título y ODS:<br>Decálogo del Agua Dulce (ODS 6)</span><br><br><span class='resaltado-nudo'>🟢 10 Normas Clave:<br>1. Cierra el grifo al lavarte.<br>2. Dúchate en 5 minutos.<br>3. Avisa de fugas de agua.<br>4. No tires restos al inodoro.<br>5. Usa el botón corto de la cisterna.<br>6. Recoge agua de lluvia para plantas.<br>7. Llena la lavadora del todo.<br>8. Bebe agua en termo propio.<br>9. Usa lavavajillas completo.<br>10. Protege ríos y mares.</span><br><br><span class='resaltado-desenlace'>✍️ Firma:<br>Brigada Gota de Agua</span>",
+                audio: "Ejemplo uno. Decálogo del Agua Dulce. ODS 6. Un conjunto de diez acciones para cuidar cada gota de agua en nuestro colegio y hogar. Firma: Brigada Gota de Agua."
+            },
+            {
+                titulo: "2. Consumo Responsable (ODS 12)",
+                icono: "♻️",
+                textShow: "<span class='resaltado-inicio'>🏷️ Título y ODS:<br>Cada Gesto Cuenta en el Reciclaje (ODS 12)</span><br><br><span class='resaltado-nudo'>🟢 10 Normas Clave:<br>1. Separa envases en el contenedor amarillo.<br>2. Recicla papel en el azul.<br>3. Usa fiambreras sin aluminio.<br>4. Reutiliza hojas impresas.<br>5. Dona tus juguetes usados.<br>6. Evita botellas de plástico solo uso.<br>7. Repara tus cosas antes de tirar.<br>8. Compra solo lo necesario.<br>9. Evita desperdiciar comida.<br>10. Usa bolsas de tela.</span><br><br><span class='resaltado-desenlace'>✍️ Firma:<br>Eco-Alumnos de 4º</span>",
+                audio: "Ejemplo dos. Cada Gesto Cuenta en el Reciclaje. ODS 12. Diez normas de consumo responsable para reducir plásticos y reciclar papel y envases. Firma: Eco Alumnos de cuarto."
+            },
+            {
+                titulo: "3. Acción por el Clima (ODS 13)",
+                icono: "🌱",
+                textShow: "<span class='resaltado-inicio'>🏷️ Título y ODS:<br>Guardianes del Clima (ODS 13)</span><br><br><span class='resaltado-nudo'>🟢 10 Normas Clave:<br>1. Ve al colegio caminando.<br>2. Apaga la luz al salir.<br>3. Desenchufa los cargadores.<br>4. Cuida los árboles del patio.<br>5. Abre persianas para iluminar.<br>6. Usa el transporte público.<br>7. Consume fruta local de temporada.<br>8. No malgastes la calefacción.<br>9. Planta semillas en el huerto.<br>10. Enseña ODS a tus amigos.</span><br><br><span class='resaltado-desenlace'>✍️ Firma:<br>Equipo Verde</span>",
+                audio: "Ejemplo tres. Guardianes del Clima. ODS 13. Diez acciones para reducir la contaminación y proteger nuestro planeta día a día. Firma: Equipo Verde."
+            }
+        ];
+
+        const consejos = [
+            { 
+                titulo: "Consejo 1: Encabeza con un título motivador", 
+                textShow: "Escribe un título llamativo que deje claro que cada pequeño gesto suma para cuidar el planeta.", 
+                adjetivos: "Ejemplos: Decálogo Verde, Cada Gesto Importa, Misión ODS 2030.",
+                audio: "Consejo uno. Encabeza con un título motivador y directo.",
+                icono: "📌" 
+            },
+            { 
+                titulo: "Consejo 2: Menciona un ODS concreto", 
+                textShow: "Elige la meta global principal: ODS 6 (Agua), ODS 7 (Energía), ODS 12 (Reciclaje) u ODS 13 (Clima).", 
+                adjetivos: "ODS 6: Agua limpia. ODS 7: Energía. ODS 12: Reciclaje. ODS 13: Clima.",
+                audio: "Consejo dos. Relaciona tu decálogo con los Objetivos de Desarrollo Sostenible.",
+                icono: "🎯" 
+            },
+            { 
+                titulo: "Consejo 3: Inicia cada norma con verbos de acción", 
+                textShow: "Usa verbos directos en imperativo o infinitivo como: Cierra, Recicla, Apaga, Reutiliza o Respetar.", 
+                adjetivos: "Verbos clave: Reducir, Cuidad, Guardar, Evitar, Compartir.",
+                audio: "Consejo tres. Empieza tus normas con verbos de acción bien claros.",
+                icono: "⚡" 
+            },
+            { 
+                titulo: "Consejo 4: Completa exactamente 10 normas", 
+                textShow: "Un decálogo siempre consta de 10 pautas bien estructuradas numeradas del 1 al 10.", 
+                adjetivos: "Formato: 10 frases cortas y sencillas de entender.",
+                audio: "Consejo cuatro. Escribe exactamente diez pautas numeradas del uno al diez.",
+                icono: "🔢" 
+            },
+            { 
+                titulo: "Consejo 5: Aplícalo a tu vida diaria", 
+                textShow: "Propón gestos cotidianos que puedas realizar realmente en el patio, en clase o en casa.", 
+                adjetivos: "Lugares: Aula, comedor, patio, casa, parque.",
+                audio: "Consejo cinco. Centra las acciones en tu día a día en el colegio y en tu casa.",
+                icono: "🏫" 
+            },
+            { 
+                titulo: "Consejo 6: Redacta en positivo", 
+                textShow: "En lugar de decir solo 'No tires basura', di 'Mantén limpio el suelo utilizando las papeleras'.", 
+                adjetivos: "Enfoque: Promover buenas costumbres en lugar de prohibir.",
+                audio: "Consejo seis. Redacta las normas con un tono positivo y motivador.",
+                icono: "😊" 
+            },
+            { 
+                titulo: "Consejo 7: Cuida la ortografía y puntuación", 
+                textShow: "Inicia cada norma con letra mayúscula y finaliza con un punto.", 
+                adjetivos: "Regla: Mayúscula inicial + Verbo + Pauta + Punto final.",
+                audio: "Consejo siete. Revisa las mayúsculas al inicio y el punto al final de cada frase.",
+                icono: "🔤" 
+            },
+            { 
+                titulo: "Consejo 8: Conecta las acciones con el lema", 
+                textShow: "Recuerda en la redacción el lema 'Cada gesto importa' para valorar las acciones pequeñas.", 
+                adjetivos: "Lema: Pequeñas acciones producen grandes cambios.",
+                audio: "Consejo ocho. Recuerda conectar tus frases con el lema Cada gesto importa.",
+                icono: "🌟" 
+            },
+            { 
+                titulo: "Consejo 9: Asume el compromiso firmando", 
+                textShow: "Firma como autor o autora o pon el nombre de tu grupo o patrulla verde.", 
+                adjetivos: "Firmas: Eco-Guardia de 4º, Brigada Sostenible, Guardián Verde.",
+                audio: "Consejo nueve. Firma tu decálogo para sellar tu compromiso ecológico.",
+                icono: "✍️" 
+            },
+            { 
+                titulo: "Consejo 10: Presenta de forma clara y vistosa", 
+                textShow: "Procura que la lista de 10 normas se lea fácil y limpia para poder colgarla en la pared.", 
+                adjetivos: "Presentación: Buena letra, lista ordenada y sin tachones.",
+                audio: "Consejo diez. Revisa que tus diez normas se lean con total claridad antes de publicar.",
+                icono: "✨" 
+            }
+        ];
+
+        let indiceEjemplo = 0;
+        let indiceConsejo = 0;
+
+        // SÍNTESIS DE VOZ
+        function hablar(texto) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel(); 
+                const mensaje = new SpeechSynthesisUtterance(texto);
+                mensaje.lang = 'es-ES';
+                mensaje.pitch = 1.1; 
+                mensaje.rate = 0.95;  
+                window.speechSynthesis.speak(mensaje);
+            }
+        }
+
+        // NAVEGACIÓN
+        function irAPantalla(idPantalla, callback) {
+            document.querySelectorAll('.pantalla').forEach(p => p.classList.remove('activa'));
+            document.getElementById(idPantalla).classList.add('activa');
+            if (callback) callback();
+        }
+
+        function irInicio() {
+            window.speechSynthesis.cancel();
+            document.getElementById('zona-confeti').innerHTML = '';
+            irAPantalla('pantalla-inicio');
+        }
+
+        // LOCUCIONES PANTALLAS
+        function hablarQueEs() {
+            hablar("Un decálogo es un texto que reúne diez normas o compromisos. El decálogo Cada Gesto Importa contiene diez acciones para cuidar el planeta a través de los Objetivos de Desarrollo Sostenible.");
+        }
+
+        function hablarEstructuraIntro() {
+            hablar("Las cuatro partes del decálogo son: Título representativo, Objetivo u ODS, las diez normas numeradas del uno al diez y la firma de compromiso.");
+        }
+
+        function hablarEstructura(num) {
+            const frases = [
+                "Uno. Título Llamativo: Muestra el nombre con el lema principal.",
+                "Dos. Meta u ODS Trabajado: Explica el objetivo de desarrollo sostenible.",
+                "Tres. Las 10 Normas Numeradas: Frases del uno al diez con verbos de acción.",
+                "Cuatro. Firma de Compromiso: Pon tu nombre o tu equipo de trabajo."
+            ];
+            hablar(frases[num - 1]);
+        }
+
+        // EJEMPLOS
+        function mostrarEjemplo() {
+            const datos = ejemplos[indiceEjemplo];
+            document.getElementById('indicador-ejemplos').innerText = `Ejemplo ${indiceEjemplo + 1} de 3`;
+            document.getElementById('icono-ejemplo').innerText = datos.icono;
+            document.getElementById('titulo-ejemplo').innerText = datos.titulo;
+            document.getElementById('cuerpo-ejemplo').innerHTML = datos.textShow;
+            
+            if (indiceEjemplo === ejemplos.length - 1) {
+                document.getElementById('btn-siguiente-ejemplo').innerText = "Ir a los 10 Consejos ➡️";
+            } else {
+                document.getElementById('btn-siguiente-ejemplo').innerText = "Siguiente Ejemplo ➡️";
+            }
+            hablar(datos.audio);
+        }
+
+        function repetirEjemploActual() {
+            hablar(ejemplos[indiceEjemplo].audio);
+        }
+
+        function siguienteEjemplo() {
+            if (indiceEjemplo < ejemplos.length - 1) {
+                indiceEjemplo++;
+                mostrarEjemplo();
+            } else {
+                indiceConsejo = 0;
+                irAPantalla('pantalla-consejos', mostrarConsejo);
+            }
+        }
+
+        // CONSEJOS
+        function mostrarConsejo() {
+            const datos = consejos[indiceConsejo];
+            document.getElementById('indicador-pantalla').innerText = `Consejo ${indiceConsejo + 1} de 10`;
+            document.getElementById('icono-consejo').innerText = datos.icono;
+            document.getElementById('titulo-consejo').innerText = datos.titulo;
+            
+            document.getElementById('detalle-consejo').innerHTML = `
+                ${datos.textShow}
+                <div class="lista-adjetivos">
+                    <strong>💡 Recomendación:</strong><br>${datos.adjetivos}
+                </div>
+            `;
+            
+            if (indiceConsejo === consejos.length - 1) {
+                document.getElementById('btn-siguiente-consejo').innerText = "¡Ir a Practicamos! 🎯";
+            } else {
+                document.getElementById('btn-siguiente-consejo').innerText = "Siguiente Consejo ➡️";
+            }
+            hablar(datos.audio);
+        }
+
+        function repetirAudioConsejo() {
+            hablar(consejos[indiceConsejo].audio);
+        }
+
+        function siguienteConsejo() {
+            if (indiceConsejo < consejos.length - 1) {
+                indiceConsejo++;
+                mostrarConsejo();
+            } else {
+                irAPantalla('pantalla-practicamos', hablarDecalogoPractica);
+            }
+        }
+
+        // PRACTICAMOS
+        function hablarDecalogoPractica() {
+            hablar("Decálogo ODS: La Eco Escuela. Contiene diez normas del uno al diez para cuidar el agua, la energía y los residuos en el colegio. Firma: Eco Patrulla de cuarto A.");
+        }
+
+        function seleccionarOpcion(btn, grupo) {
+            const hermanos = btn.parentElement.querySelectorAll('.btn-opcion');
+            hermanos.forEach(b => b.classList.remove('seleccionada'));
+            btn.classList.add('seleccionada');
+        }
+
+        // ESCRIBIMOS (TALLER 1 A 10)
+        function inicializarEscribimos() {
+            actualizarDecalogo();
+            hablar("Escribe en las casillas de la izquierda tu título, ODS, las diez normas y la firma para componer tu decálogo.");
+        }
+
+        function actualizarDecalogo() {
+            const titulo = document.getElementById('input-titulo').value.trim();
+            const ods = document.getElementById('input-ods').value.trim();
+            const firma = document.getElementById('input-firma').value.trim();
+
+            document.getElementById('prev-titulo').innerText = titulo ? `Título: ${titulo}` : "Título: _______";
+            document.getElementById('prev-ods').innerText = ods ? `Meta: ${ods}` : "Meta: _______";
+            
+            const ol = document.getElementById('prev-lista');
+            ol.innerHTML = '';
+
+            for (let i = 1; i <= 10; i++) {
+                const val = document.getElementById(`n${i}`).value.trim();
+                const li = document.createElement('li');
+                li.innerText = val ? val : `Norma ${i}...`;
+                ol.appendChild(li);
+            }
+
+            document.getElementById('prev-firma').innerText = firma ? `Firma: ${firma}` : "Firma: _______";
+        }
+
+        function leerNotaRedactada() {
+            const titulo = document.getElementById('input-titulo').value.trim() || "Decálogo Cada Gesto Importa";
+            const ods = document.getElementById('input-ods').value.trim() || "ODS";
+            const firma = document.getElementById('input-firma').value.trim() || "Eco guardián";
+            
+            let textoLectura = `${titulo}. Meta: ${ods}. Las diez normas son: `;
+            for (let i = 1; i <= 10; i++) {
+                const val = document.getElementById(`n${i}`).value.trim();
+                if (val) textoLectura += `${i}: ${val}. `;
+            }
+            textoLectura += `Firma: ${firma}.`;
+            
+            hablar(textoLectura);
+        }
+
+        function imprimirNotaPDF() {
+            window.print();
+        }
+
+        // DIPLOMA
+        function irAlDiploma() {
+            irAPantalla('pantalla-final');
+            crearConfeti();
+            repetirAudioFinal();
+        }
+
+        function repetirAudioFinal() {
+            hablar("¡Enhorabuena! Has completado el decálogo de diez normas Cada Gesto Importa de los ODS. ¡Aplica tus diez compromisos cada día!");
+        }
+
+        function crearConfeti() {
+            const zona = document.getElementById('zona-confeti');
+            zona.innerHTML = '';
+            const colores = ['#2E7D32', '#388E3C', '#4CAF50', '#81C784', '#C8E6C9', '#FFCA28'];
+            for (let i = 0; i < 50; i++) {
+                const c = document.createElement('div');
+                c.classList.add('confeti');
+                c.style.left = Math.random() * 100 + '%';
+                c.style.backgroundColor = colores[Math.floor(Math.random() * colores.length)];
+                c.style.animationDelay = Math.random() * 2 + 's';
+                c.style.transform = `scale(${Math.random() * 1.2})`;
+                zona.appendChild(c);
+            }
+        }
+    </script>
+</body>
+</html>
